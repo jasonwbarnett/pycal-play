@@ -33,3 +33,7 @@ def find_available(workday, meetings):
         free_time.append([last_meeting.end, workday.end])
 
     return free_time
+
+def find_match(availability_a, availability_b, duration):
+    # 1. remove availability less than duration, in both
+    # 2. remove availability
